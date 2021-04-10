@@ -1,0 +1,189 @@
+.section-title {
+    position: relative;
+
+    h4 {
+        font-size: 150px;
+        color: #ebebeb;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px;
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 42px;
+        color: $heading-color;
+        margin-bottom: 40px;
+        span {
+            color: $theme-color;
+        }
+    }
+    p {
+        color: #555555;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.token-price {
+    .pricess {
+        .single-price {
+            display: inline-block;
+            border: 1px solid #EEEEEE;
+            padding: 30px;
+            margin: 0 8px;
+            margin-bottom: 16px;
+
+            h4 {
+                font-size: 18px;
+                text-align: left;
+                line-height: 1;
+                margin-bottom: 20px;
+                color: $theme-color;
+            }
+            p {
+                color: #121B25;
+                text-align: left;
+                font-size: 16px;
+                line-height: 1;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+.token-sale {
+    .sale-title {
+        h2 {
+            font-size: 24px;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #555555;
+        }
+    }
+    .sales {
+        .single-sale {
+            display: inline-block;
+            background: #F9F9F9;
+            border: 1px solid #EEEEEE;
+            border-radius: 10px;
+            margin: 0 10px;
+            margin-bottom: 20px;
+            @include transition(0.3s);
+
+            .sale-title {
+                @include transition(0.3s);
+                a {
+                    font-size: 18px;
+                    color: #fff;
+                    background-color: $heading-color;
+                    display: block;
+                    border-radius: 10px;
+                    padding: 20px;
+                    line-height: 1;
+                    font-weight: 600;
+                    @include transition(0.3s);
+                }
+            }
+            .sale-content {
+                padding: 45px;
+                padding-left: 52px;
+
+                h4 {
+                    color: $theme-color;
+                    font-size: 18px;
+                    line-height: 1;
+                    margin-bottom: 10px;
+                    font-weight: 500;
+                }
+                p {
+                    font-size: 16px;
+                    color: #555555;
+                    margin-bottom: 20px;
+                    font-weight: 400;
+                    line-height: 1;
+                }
+                span {
+                    font-size: 16px;
+                    color: #555555;
+                    font-weight: 400;
+                    display: block;
+                    line-height: 1;
+                }
+            }
+            &:hover .sale-title > a{
+                background-color: $theme-color;
+                
+            }
+            &:hover {
+                border-color: $theme-color;
+            }
+        }
+    }
+}
+
+// Responsive 
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+}
+ 
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+}
+ 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .section-title {
+        h4 {
+            font-size: 90px;
+            top: -30px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+    .token-price {
+        .pricess {
+            .single-price {
+                display: block;
+                text-align: center;
+
+                h4 {
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+ 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+  
+ 

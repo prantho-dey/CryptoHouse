@@ -79,7 +79,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        background-color: #5D44BE;
+        background-color: $theme-color;
         @include transition(0.3s);
         border-radius: 5px;
         z-index: -1;
@@ -90,8 +90,8 @@
         right: 0;
     }
     &:hover {
-        color: #5D44BE;
-        border-color: #5D44BE;
+        color: $theme-color;
+        border-color: $theme-color;
     }
 
 

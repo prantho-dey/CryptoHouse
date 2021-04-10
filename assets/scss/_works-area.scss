@@ -84,12 +84,16 @@
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) and (max-width: 1399.98px) { 
-  
+ 
  }
  
  // Large devices (desktops, 992px and up)
  @media (min-width: 992px) and (max-width: 1199.98px) { 
-   
+    .works-area {
+        .works-image {
+            animation: inherit;
+        }
+    }
  }
  
  // Medium devices (tablets, 768px and up)
@@ -97,6 +101,7 @@
     .works-area {
         .works-image {
             margin-top: 70px;
+            animation: inherit;
         }
     }
  }
@@ -108,6 +113,9 @@
             .single-works {
                 margin-bottom: 80px;
             }
+        }
+        .works-image {
+            animation: inherit;
         }
     }
     .ex-pt {
@@ -125,6 +133,9 @@
     .works-area {
         .works-image {
             margin-top: 70px;
+        }
+        .works-image {
+            animation: inherit;
         }
     }
  }
