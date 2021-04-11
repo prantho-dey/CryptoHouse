@@ -1509,7 +1509,6 @@ label {
 }
 .team-area {
   margin-top: -244px;
-  z-index: 99;
   position: relative;
 }
 .team-area .team-content h2 {
@@ -1566,9 +1565,277 @@ label {
     transform: scale(1.5);
   }
 }
+.team-area .team-vector img {
+  position: absolute;
+  width: 350px;
+  height: 340px;
+  top: 210px;
+  left: 0;
+  z-index: -1;
+}
+.team-area .team-member {
+  position: relative;
+}
+.team-area .team-member .single-member {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 8px;
+}
+.team-area .team-member .single-member:hover > .single-member-content {
+  opacity: 1;
+  visibility: visible;
+}
+.team-area .team-member .single-member .single-member-content {
+  position: absolute;
+  content: "";
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.team-area .team-member .single-member .single-member-content .member-link {
+  width: 250px;
+  height: 100%;
+}
+.team-area .team-member .single-member .single-member-content .member-link a {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 34px;
+  color: #fff;
+  margin: 0 12px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  font-size: 18px;
+}
+.team-area .team-member .single-member .single-member-content .member-link a:hover {
+  border-color: transparent;
+  background-color: #000349;
+}
+.team-area .team-member .single-member .single-member-content a {
+  display: block;
+  font-size: 20px;
+  line-height: 34px;
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.team-area .team-member .single-member .single-member-content a span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+}
+.team-area .team-member .single-member .single-member-content .man-overlay {
+  position: absolute;
+  top: -61px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
 .team-button {
   margin-top: 10px;
+}
+
+.member-button {
+  margin-top: 60px;
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .team-area .team-member .single-member {
+    width: 260px;
+    margin: 0px 6px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .team-area {
+    margin-top: -70px;
+  }
+  .team-area .team-vector img {
+    top: 0;
+  }
+  .team-area .team-member {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .team-area {
+    margin-top: -70px;
+    text-align: center;
+  }
+  .team-area .team-vector img {
+    top: 0;
+  }
+  .team-area .team-member {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 575.98px) {
+  .team-area {
+    margin-top: -170px;
+    text-align: center;
+  }
+  .team-area .team-vector img {
+    top: 0;
+  }
+  .team-area .team-member {
+    padding-top: 40px;
+  }
+  .team-area .team-member .single-member {
+    margin-bottom: 20px;
+  }
+
+  .member-button {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .team-area {
+    margin-top: -70px;
+    text-align: center;
+  }
+  .team-area .team-vector img {
+    top: 0;
+  }
+  .team-area .team-member {
+    padding-top: 100px;
+  }
+}
+.accordion-area {
+  background-color: #F9F9F9;
+}
+.accordion-area .accordion-container {
+  margin-bottom: 30px;
+}
+.accordion-area .accordion-container .accordion-header {
+  background: #E4E4E4;
+  border-radius: 10px;
+  padding: 35px 30px;
+  position: relative;
+  -webkit-transition: all 0.7s linear 0s;
+  -moz-transition: all 0.7s linear 0s;
+  -ms-transition: all 0.7s linear 0s;
+  -o-transition: all 0.7s linear 0s;
+  transition: all 0.7s linear 0s;
+}
+.accordion-area .accordion-container .accordion-header h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  position: relative;
+  margin: 0;
+}
+.accordion-area .accordion-container .accordion-header i {
+  position: absolute;
+  content: "";
+  top: 37px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  background-color: #B2B2B2;
+  text-align: center;
+  line-height: 24px;
+  color: #000349;
+  border-radius: 1px;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.accordion-area .accordion-container .accordion-header .accordion-body {
+  padding: 0;
+  width: 100%;
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  overflow: hidden;
+}
+.accordion-area .accordion-container .accordion-header .accordion-body p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 30px;
+  margin: 0;
+  padding-top: 20px;
+}
+.accordion-area .accordion-container .accordion-header .accordion-body ul {
+  margin: 0;
+  padding-left: 15px;
+}
+.accordion-area .accordion-container .accordion-header .accordion-body ul li {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+.accordion-area .accordion-container .active {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+.accordion-area .accordion-container .active .accordion-body {
+  height: 260px;
+  visibility: visible;
+  opacity: 1;
+}
+.accordion-area .accordion-container .active i {
+  transform: rotate(180deg);
+  background-color: #000349;
+  color: #fff;
+}
+
+.active {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.accordion-title h4 {
+  z-index: 1;
+}
+.accordion-title h2 {
+  position: relative;
+  z-index: 9;
+}
+
+@media (max-width: 575.98px) {
+  .accordion-area .accordion-container .accordion-header h2 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .accordion-area .accordion-container .accordion-header h2 {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,135 @@
+.accordion-area {
+    background-color: #F9F9F9;
+
+    .accordion-container {
+       margin-bottom: 30px;
+        .accordion-header {
+            background: #E4E4E4;
+            border-radius: 10px;
+            padding: 35px 30px;
+            position: relative;
+            @include transition(0.7s);
+
+            h2 {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 27px;
+                position: relative;
+                margin: 0;
+            }
+            i {
+                position: absolute;
+                content: "";
+                top: 37px;
+                right: 20px;
+                width: 24px;
+                height: 24px;
+                background-color: #B2B2B2;
+                text-align: center;
+                line-height: 24px;
+                color: #000349;
+                border-radius: 1px;
+                @include transition(0.3s);
+            }
+
+
+            .accordion-body {
+                padding: 0;
+                width: 100%;
+                height: 0px;
+                visibility: hidden;
+                opacity: 0;
+                @include transition(0.3s);
+                overflow: hidden;
+                
+    
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-bottom: 30px;
+                    margin: 0;
+                    padding-top: 20px;
+                }
+                ul {
+                    margin: 0;
+                    padding-left: 15px;
+                    li {
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding-bottom: 30px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        
+        .active {
+            background: #FFFFFF;
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.07);
+            border-radius: 10px;
+            .accordion-body{
+                height: 260px;
+                visibility: visible;
+                opacity: 1;
+           }
+           i {
+                transform: rotate(180deg);
+                background-color: $heading-color;
+                color: #fff;
+            }
+        }
+       
+    }
+}
+
+
+.active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+.accordion-title {
+    h4 {
+        z-index: 1;
+    }
+    h2 {
+        position: relative;
+        z-index: 9;
+    }
+}
+
+// Responsive 
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .accordion-area {
+        .accordion-container {
+            .accordion-header {
+                h2 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .accordion-area {
+        .accordion-container {
+            .accordion-header {
+                h2 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+ 

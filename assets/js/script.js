@@ -58,6 +58,14 @@
 	$('.popup-video').magnificPopup({
 		type: 'iframe'
 	});
+
+	 // Accordion 
+	 $(".accordion-header").click(function(){
+        $(".accordion-header").removeClass("active");
+        $(this).addClass("active");
+    });
+
+
 	/*------------------------------------
         scrollUp
 	--------------------------------------*/
