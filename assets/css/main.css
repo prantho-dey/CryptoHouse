@@ -1507,5 +1507,68 @@ label {
     padding-bottom: 70px;
   }
 }
+.team-area {
+  margin-top: -244px;
+  z-index: 99;
+  position: relative;
+}
+.team-area .team-content h2 {
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+.team-area .team-content p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+.team-area .team-image {
+  position: relative;
+}
+.team-area .team-image .play-button a {
+  position: absolute;
+  top: 45%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  color: #444;
+  font-size: 20px;
+  padding-left: 4px;
+}
+.team-area .team-image .play-button a::before, .team-area .team-image .play-button a::after {
+  position: absolute;
+  content: "";
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+}
+.team-area .team-image .play-button a::after {
+  animation-delay: 0.5s;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.team-button {
+  margin-top: 10px;
+}
 
 /*# sourceMappingURL=main.css.map */

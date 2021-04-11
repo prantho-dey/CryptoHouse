@@ -53,6 +53,11 @@
 	setInterval(countDown, 1000)
 
 
+
+	// Popup Video 
+	$('.popup-video').magnificPopup({
+		type: 'iframe'
+	});
 	/*------------------------------------
         scrollUp
 	--------------------------------------*/
