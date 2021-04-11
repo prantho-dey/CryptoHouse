@@ -110,6 +110,8 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
     .accordion-area {
+        padding-bottom: 30px;
+        padding-top: 60px;
         .accordion-container {
             .accordion-header {
                 h2 {
@@ -118,7 +120,7 @@
             }
             .active {
                 .accordion-body{
-                    height: 360px;
+                    height: 240px;
                }
             }
         }
