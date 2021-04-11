@@ -116,6 +116,11 @@
                     font-size: 16px;
                 }
             }
+            .active {
+                .accordion-body{
+                    height: 360px;
+               }
+            }
         }
     }
 }

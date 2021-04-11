@@ -1831,6 +1831,9 @@ label {
   .accordion-area .accordion-container .accordion-header h2 {
     font-size: 16px;
   }
+  .accordion-area .accordion-container .active .accordion-body {
+    height: 360px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .accordion-area .accordion-container .accordion-header h2 {
