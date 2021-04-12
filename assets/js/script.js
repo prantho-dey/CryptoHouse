@@ -2,15 +2,19 @@
 
     'use strict';
 
-	/*------------------------------------
-		Mobile Menu
-	--------------------------------------*/
+	// Mobile Menu
+	$(".mobile-menu-icon").click(function(){
+        $(".mobile-menu").toggleClass("menu-show");
+        $(".mobile-menu-icon").toggleClass("slider-show");
 
+    });
 
-	/*-------------------------------------------
-	    Sticky Header
-	--------------------------------------------- */
+	// Language Option Slide
+	$(".header-button").click(function(){
+        $(".sub-button").slideToggle(400);
+    });
 
+	// Sticky Header
 	let win = $(window);
 	let sticky_id = $(".header-area");
 	win.on('scroll', function () {
@@ -30,7 +34,7 @@
 	let secItem = document.querySelector("#sec");
 
 	let countDown = () => {
-		let futureDate = new Date("13 April 2021");
+		let futureDate = new Date("14 April 2021");
 		let currentDate = new Date();
 		let myDate = futureDate - currentDate;
 
@@ -47,9 +51,7 @@
 		minItem.innerHTML = min;
 		secItem.innerHTML = sec;
 	}
-
 	countDown()
-
 	setInterval(countDown, 1000)
 
 
