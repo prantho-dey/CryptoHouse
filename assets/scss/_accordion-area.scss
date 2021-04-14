@@ -1,21 +1,22 @@
 .accordion-area {
-    background-color: #F9F9F9;
+    background-color: #ffffff;
 
     .accordion-container {
        margin-bottom: 30px;
         .accordion-header {
-            background: #E4E4E4;
+            background: #FAFAFA;
             border-radius: 10px;
             padding: 35px 30px;
             position: relative;
             @include transition(0.7s);
-
+            
             h2 {
                 font-size: 18px;
                 font-weight: 500;
                 line-height: 27px;
                 position: relative;
                 margin: 0;
+                cursor: pointer;
             }
             i {
                 position: absolute;
@@ -24,7 +25,7 @@
                 right: 20px;
                 width: 24px;
                 height: 24px;
-                background-color: #B2B2B2;
+                background-color: #DADADA;
                 text-align: center;
                 line-height: 24px;
                 color: #000349;
@@ -74,7 +75,7 @@
            }
            i {
                 transform: rotate(180deg);
-                background-color: $heading-color;
+                background-color: #5D44BE;
                 color: #fff;
             }
         }

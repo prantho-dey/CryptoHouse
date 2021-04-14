@@ -2,6 +2,7 @@
 
     'use strict';
 
+	
 	// Mobile Menu
 	$(".mobile-menu-icon").click(function(){
         $(".mobile-menu").toggleClass("menu-show");
@@ -26,6 +27,7 @@
 		}
 	});
 
+	
 
 	// Count Down 
 	let daysItem = document.querySelector("#days");
@@ -68,23 +70,29 @@
     });
 
 
-	/*------------------------------------
-        scrollUp
-	--------------------------------------*/
-	$(window).scroll(function () {
-		if ($(this).scrollTop() !== 0) {
-			$('#scrollUp').fadeIn();
-		} else {
-			$('#scrollUp').fadeOut();
-		}
-    });
-    
-	$('#scrollUp').on('click', function () {
-		$("html, body").animate({scrollTop: 0}, 600);
-		return false;
+	// Scroll-top-button
+	$('.scroll-top-button').click(function(){
+		$('html').animate({'scrollTop':'0px'},300);
 	});
 
+	$(window).scroll(function(){
 
+		var scroll = jQuery(window).scrollTop();
+
+		if (scroll > 300) {
+			$('.scroll-top-button').show();
+		}else{
+			$('.scroll-top-button').hide();
+		}
+	});
+
+	// One Page Nav
+	var top_offset = $('.header-area').height() - 10;
+	$('.menu nav ul').onePageNav({
+		currentClass: 'active',
+		scrollOffset: top_offset,
+	});
+	
 
 
 })(jQuery);
