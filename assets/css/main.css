@@ -982,11 +982,6 @@ label {
   margin-right: 25px;
 }
 
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  .slider-area .slider-card {
-    background-color: red !important;
-  }
-}
 @media (min-width: 768px) and (max-width: 991.98px) {
   .slider-area .slider-content {
     margin-top: 200px;
@@ -1502,7 +1497,7 @@ label {
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .section-title h4 {
-    font-size: 120px;
+    font-size: 100px;
     top: -40px;
   }
 }
